@@ -1,0 +1,102 @@
+1. Which are the different genres?
+Answers: 
+Book, Business, Catalog, Education, Entertainment, Finance, Food & Drink, Games, Health and Fitness, Lifestyle, Music, News, Photo & Video, Productivity, Reference, Shopping, Social Network, Sports, Weather , Utilities
+Queries:
+SELECT * FROM data
+ORDER BY prime_genre 
+
+2. Which is the genre with more apps rated?
+Answers: 
+Games
+Queries:
+SELECT prime_genre, SUM(rating_count_tot) AS my_sum FROM data
+GROUP BY prime_genre
+ORDER BY my_sum desc;
+
+3. Which is the genre with more apps?
+Answers: 
+Games
+Queries:
+SELECT prime_genre, COUNT(track_name) AS my_count FROM data
+GROUP BY prime_genre
+ORDER BY my_count desc;
+
+4. Which is the one with less?
+Answers: Catalogs
+Queries:
+SELECT prime_genre, COUNT(track_name) AS my_count FROM data
+GROUP BY prime_genre
+ORDER BY my_count asc;
+
+5. Take the 10 apps most downloaded.
+
+Answers:
+Facebook	2974676
+Instagram	2161558
+Clash of Clans	2130805
+Temple Run	1724546
+Pandora - Music & Radio	1126879
+Pinterest	1061624
+Bible	985920
+Candy Crush Saga	961794
+Spotify Music	878563
+Angry Birds	824451
+
+Queries:
+SELECT track_name, rating_count_tot AS my_rating FROM data
+GROUP BY track_name 
+ORDER BY my_rating desc
+LIMIT 10; 
+
+6. Take the 10 apps best rated by users.
+Answers:
+Head Soccer	5	481564
+Plants vs. Zombies	5	426463
+Sniper 3D Assassin: Shoot to Kill Gun Game	5	386521
+Geometry Dash Lite	5	370370
+Infinity Blade	5	326482
+Geometry Dash	5	266440
+Domino's Pizza USA	5	258624
+CSR Racing 2	5	257100
+Pictoword: Fun 2 Pics Guess What's the Word Trivia	5	186089
+Plants vs. Zombies HD	5	163598
+
+Queries
+SELECT track_name, user_rating, rating_count_tot FROM data
+ORDER BY user_rating desc, rating_count_tot desc 
+LIMIT 10; 
+
+7. Take the mean rate between the 10 apps most rated.
+Answer: 4.35
+Queries:
+SELECT avg(top_10.user_rating)
+FROM (SELECT track_name, user_rating FROM data
+ORDER BY rating_count_tot desc
+LIMIT 10) AS top_10
+
+8. Take the mean rate between the 10 apps best rated.
+Answers: 5
+Queries:
+SELECT avg(top_10.user_rating)
+FROM (SELECT track_name, user_rating FROM data
+ORDER BY user_rating desc
+LIMIT 10) AS top_10
+
+9. What do you see here?
+avg(top_10.user_rating) = 5
+10. How could you take the top 3 regarding the user ratings but also the number of votes?
+Answers: 
+Head Soccer	5	481564
+Plants vs. Zombies	5	426463
+Sniper 3D Assassin: Shoot to Kill Gun Game	5	386521
+Queries:
+SELECT track_name, user_rating, rating_count_tot FROM data
+ORDER BY user_rating desc, rating_count_tot desc
+LIMIT 3;
+11. Does people care about the price?
+
+Queries: 
+
+SELECT track_name, rating_count_tot, price, user_rating FROM data
+ORDER BY user_rating desc, rating_count_tot desc
+LIMIT 100;
