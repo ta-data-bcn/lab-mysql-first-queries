@@ -20,8 +20,8 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 
 **8. Take the mean rate between the 10 apps best rated.**
 
-**9. What do you see here?.**
+**9. What do you see here?**
 
-**10. How could you take the top 3 regarding the user ratings but also the number of votes?.**
+**10. How could you take the top 3 regarding the user ratings but also the number of votes?**
 
 **11. Does people care about the price?**
