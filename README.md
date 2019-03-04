@@ -6,7 +6,7 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 
 **1. Which are the different genres?**
 
-**2. Which is the genre with more apps downloaded?**
+**2. Which is the genre with more apps rated?**
 
 **3. Which is the genre with more apps?**
 
@@ -16,7 +16,7 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 
 **6. Take the 10 apps best rated by users.**
 
-**7. Take the mean rate between the 10 apps most downloaded.**
+**7. Take the mean rate between the 10 apps most rated.**
 
 **8. Take the mean rate between the 10 apps best rated.**
 
