@@ -1,0 +1,128 @@
+--Task 1:
+SELECT DISTINCT prime_genre  FROM data
+/* Answer:
+Games
+Productivity
+Weather
+Shopping
+Reference
+Finance
+Music
+Utilities
+Travel
+Social Networking
+Sports
+Business
+Health & Fitness
+Entertainment
+Photo & Video
+Navigation
+Education
+Lifestyle
+Food & Drink
+News
+Book
+Medical
+Catalogs */
+
+-- Task 2:
+SELECT prime_genre, SUM(rating_count_tot) AS rating_count_tot2 FROM data
+GROUP BY prime_genre
+ORDER BY rating_count_tot2 DESC;
+
+/* Answer:
+Games with 52878491 ratings. */
+
+-- Task 3:
+SELECT prime_genre, COUNT(*) AS num_apps FROM data
+GROUP BY prime_genre
+ORDER BY num_apps DESC
+
+/* Answer:
+Games with 3862 apps. */
+
+-- Task 4:
+SELECT prime_genre, COUNT(*) AS num_apps FROM data
+GROUP BY prime_genre
+ORDER BY num_apps ASC
+
+/* Answer:
+Catalogs with 10 apps. */
+
+-- Task 5:
+SELECT track_name,rating_count_tot FROM data
+ORDER BY rating_count_tot DESC
+LIMIT 10;
+
+/* Answer:
+Facebook	2974676
+Instagram	2161558
+Clash of Clans	2130805
+Temple Run	1724546
+Pandora - Music & Radio	1126879
+Pinterest	1061624
+Bible	985920
+Candy Crush Saga	961794
+Spotify Music	878563
+Angry Birds	824451 */
+
+
+-- Task 6:
+SELECT track_name,user_rating FROM data
+ORDER BY user_rating DESC, rating_count_tot DESC
+LIMIT 10
+
+/* Answer:
+:) Sudoku +	5
+King of Dragon Pass	5
+TurboScan™ Pro - document & receipt scanner: scan multiple pages and photos to PDF	5
+Plants vs. Zombies	5
+Learn to Speak Spanish Fast With MosaLingua	5
+Plants vs. Zombies HD	5
+The Photographer's Ephemeris	5
+▻Sudoku +	5
+Flashlight Ⓞ	5
+Infinity Blade	5 */
+
+-- Task 7:
+SELECT avg(top10.user_rating)
+FROM (
+SELECT track_name,user_rating FROM data
+ORDER BY rating_count_tot DESC
+LIMIT 10) top10
+
+/* Answer:
+Avg of top 10 most rated apps is: 4.35
+ */
+
+-- Task 8:
+SELECT avg(top10.user_rating)
+FROM (
+SELECT track_name,user_rating FROM data
+ORDER BY user_rating DESC
+LIMIT 10) top10
+
+/* Answer: 
+Avg of top 10 best rated apps is: 5
+*/
+
+-- Task 9:
+/* Answer:
+That most rated apps are pretty common apps but the best rated apps are not that common, more votes = better sample */ 
+
+-- Task 10:
+SELECT track_name,user_rating, rating_count_tot FROM data
+ORDER BY user_rating DESC
+LIMIT 3
+
+/* Answer:
+:) Sudoku +	5	11447
+King of Dragon Pass	5	882
+TurboScan™ Pro - document & receipt scanner: scan multiple pages and photos to PDF	5	28388 */
+
+-- Task 11:
+SELECT track_name, price, rating_count_tot from data
+ORDER BY rating_count_tot desc
+
+/* Answer:
+The most rated apps are mainly free apps. We need more information to answer this question properly (like download, uninstall, active users, etc) */
