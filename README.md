@@ -12,7 +12,7 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 
 **4. Which is the one with less?**
 
-**5. Take the 10 apps most downloaded.**
+**5. Take the 10 apps most rated.**
 
 **6. Take the 10 apps best rated by users.**
 
