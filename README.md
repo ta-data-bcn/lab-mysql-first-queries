@@ -1,3 +1,5 @@
+![Ironhack logo](https://i.imgur.com/1QgrNNw.png)
+
 # Lab | My first queries
 
 Please, connect to the Data Bootcamp Google Database using the credentials provided in class. Choose the database called *appleStore* (NOT *appleStore2*!) and use the *data* table to query the data about Apple Store Apps to answer the following questions: 
