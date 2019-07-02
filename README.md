@@ -16,9 +16,9 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 
 **6. Take the 10 apps best rated by users.**
 
-**7. Take a look on the data you retrieved in the question 5. Give some insights.
+**7. Take a look on the data you retrieved in the question 5. Give some insights.**
 
-**8. Take a look on the data you retrieved in the question 6. Give some insights.
+**8. Take a look on the data you retrieved in the question 6. Give some insights.**
 
 **9. Now compare the data from questions 5 and 6. What do you see?**
 
