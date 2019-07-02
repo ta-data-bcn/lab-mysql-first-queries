@@ -24,8 +24,8 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 
 **10. How could you take the top 3 regarding the user ratings but also the number of votes?**
 
-**11. Does people care about the price? 
-Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?**
+**11. Does people care about the price? **
+Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?
 
 
 ## Deliverables 
