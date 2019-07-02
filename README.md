@@ -89,18 +89,18 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 
 **8. Take the mean rate between the 10 apps best rated.** Don't calculate the mean, just see the data!
 
-It is 5. Just mind that those 10 apps are not exactly the best rated. That is, they are among the best rated, but they are tied with the best rating with 490 more apps, that also has the top rating. SQL, just gave us a slice of 10 of them.
+It is 5. Just mind that those 10 apps are not exactly the best rated. That is, they are among the best rated, but they are tied in having the best rating with 490 more apps that also have the top rating. By limiting to 10 records, we just get a slice of 10 of them.
 
 **9. What do you see here?**
 
-The query for the 10 most rated ones gives us the top 10 of most rated apps. But the query for the 10 best rated ones, does not exactly gives us the 10 most rated ones but a sample of them.
+The query for the 10 most rated ones gives us the top 10 of most rated apps. But the query for the 10 best rated ones, does not exactly gives us the 10 best rated ones but a sample of them.
 
 **10. How could you take the top 3 regarding the user ratings but also the number of votes?**
 
-They are different variables. We cant sort by them at once. It is either one or the other. If we include both columns to sort from, what we actually have is a tie-break 2nd criteria. That is, when the sorting using the 1st column gives us a tie, then we move on to the 2nd one used in the query.
+They are different variables. We cant sort by them at once. It is either one or the other. If we include both columns to sort from, what we actually have is a tie-break 2nd criteria. That is, when the sorting using the 1st column gives us a tie, then we move on to the 2nd one used in the query to sort from.
 
 **11. Does people care about the price?**
-In general they do, cause the most downloaded ones are for free. If they hadn't been for free, probably they wouldn't have become so famous and used. Nevertheless, we won't really know this for sure.
+In general they do, cause the most downloaded ones are for free. If they hadn't been for free, maybe they wouldn't have become so famous and used. Nevertheless, we won't really know this for sure.
 
 
 ## Deliverables 
