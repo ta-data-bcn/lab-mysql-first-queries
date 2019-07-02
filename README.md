@@ -16,15 +16,16 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 
 **6. Take the 10 apps best rated by users.**
 
-**7. Take the mean rate between the 10 apps most rated.** Don't calculate the mean, just see the data!
+**7. Take a look on the data you retrieved in the question 5. Give some insights.
 
-**8. Take the mean rate between the 10 apps best rated.** Don't calculate the mean, just see the data!
+**8. Take a look on the data you retrieved in the question 6. Give some insights.
 
-**9. What do you see here?**
+**9. Now compare the data from questions 5 and 6. What do you see?**
 
 **10. How could you take the top 3 regarding the user ratings but also the number of votes?**
 
-**11. Does people care about the price?**
+**11. Does people care about the price? 
+Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?**
 
 
 ## Deliverables 
