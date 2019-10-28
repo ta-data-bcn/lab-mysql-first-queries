@@ -13,34 +13,33 @@ from data
 
 
 -- **2. Which is the genre with more apps rated?**
-select count(prime_genre) as count_apps, prime_genre
+select count(rating_count_tot) as contar, prime_genre
 from data
 where rating_count_tot != 0
 group by prime_genre
-order by count_apps desc
+order by contar desc
 ;
 
 
 -- **3. Which is the genre with more apps?**
-select prime_genre, count(prime_genre)
+select prime_genre, count(prime_genre) as counter
 from data
 group by prime_genre
-order by count(prime_genre) DESC
+order by counter DESC
 ;
 
 -- **4. Which is the one with less?**
-select prime_genre, count(*) as counting 
+select prime_genre, count(prime_genre) as counter
 from data
 group by prime_genre
-order by counting ASC 
+order by counter asc
 ;
 
-
 -- **5. Take the 10 apps most rated.**
-select rating_count_tot, prime_genre, count(rating_count_tot) as co
+select rating_count_tot, prime_genre
 from data
 group by rating_count_tot, prime_genre
-order by rating_count_tot desc, co desc
+order by rating_count_tot desc
 limit 10 
 ;
 
