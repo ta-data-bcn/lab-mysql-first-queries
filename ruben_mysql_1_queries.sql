@@ -36,9 +36,9 @@ order by counter asc
 ;
 
 -- **5. Take the 10 apps most rated.**
-select rating_count_tot, prime_genre
+select track_name, prime_genre
 from data
-group by rating_count_tot, prime_genre
+-- group by rating_count_tot, prime_genre, track_name
 order by rating_count_tot desc
 limit 10 
 ;
