@@ -1,0 +1,9 @@
+***Take a look on the data you retrieved in the question 5. Give some insights.***
+
+Social media apps are the two most rated apps. This could be either because they are more popular in number or because more active users self select into the group that use those apps.
+
+***Take a look on the data you retrieved in the question 6. Give some insights. And now compare the data from questions 5 and 6. What do you see?***
+
+The best rated apps are mostly games. The best rated apps are not the most popular. It might be the case that the gaming community is smaller than the users of social media, but they are less heterogeneous. So, even if they are fewer users in total they mostly agree on which games are really good and they might really appreciate the work of the people who designed those games.
+
+***Do people care about the price? Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?***
