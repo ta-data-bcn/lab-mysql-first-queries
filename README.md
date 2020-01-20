@@ -111,7 +111,7 @@ Yes they do.
 
 As we can see the % total of free apps is more than 50% indicating a clear preference towards free apps.
 
-Moreover, The % of total apps with an increasing price is inversley proportional is their price.
+Moreover, The % of total apps with an increasing price is inversley proportional to their price.
 
 ## Deliverables 
 You need to submit a `.sql` file that includes the queries used to answer the questions above, as well as an `.md` file including your answers. 
