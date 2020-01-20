@@ -7,29 +7,29 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 **1. Which are the different genres?**
 
 **Answer**:
--Games
--Productivity
--Weather
--Shopping
--Reference
--Finance
--Music
--Utilities
--Travel
--Social Networking
--Sports
--Business
--Health & Fitness
--Entertainment
--Photo & Video
--Navigation
--Education
--Lifestyle
--Food & Drink
--News
--Book
--Medical
--Catalogs
+- Games
+- Productivity
+- Weather
+- Shopping
+- Reference
+- Finance
+- Music
+- Utilities
+- Travel
+- Social Networking
+- Sports
+- Business
+- Health & Fitness
+- Entertainment
+- Photo & Video
+- Navigation
+- Education
+- Lifestyle
+- Food & Drink
+- News
+- Book
+- Medical
+- Catalogs
 
 **2. Which is the genre with more apps rated?**
 
@@ -51,31 +51,31 @@ Please, connect to the Data Bootcamp Google Database using the credentials provi
 **5. Take the 10 apps most rated.**
 
 **Answer**:
--Facebook	2974676
--Instagram	2161558
--Clash of Clans	2130805
--Temple Run	1724546
--Pandora - Music & Radio	1126879
--Pinterest	1061624
--Bible	985920
--Candy Crush Saga	961794
--Spotify Music	878563
--Angry Birds	824451
+- Facebook	2974676
+- Instagram	2161558
+- Clash of Clans	2130805
+- Temple Run	1724546
+- Pandora - Music & Radio	1126879
+- Pinterest	1061624
+- Bible	985920
+- Candy Crush Saga	961794
+- Spotify Music	878563
+- Angry Birds	824451
 
 
 **6. Take the 10 apps best rated by users.**
 
 **Answer**:
--TurboScan™ Pro - document & receipt scanner: scan multiple pages and photos to PDF	5
--Flashlight Ⓞ	5
--Learn to Speak Spanish Fast With MosaLingua	5
--:) Sudoku +	5
--The Photographer's Ephemeris	5
--King of Dragon Pass	5
--Escape the Sweet Shop Series	5
--Infinity Blade	5
--Plants vs. Zombies HD	5
--Plants vs. Zombies	5
+- TurboScan™ Pro - document & receipt scanner: scan multiple pages and photos to PDF	5
+- Flashlight Ⓞ	5
+- Learn to Speak Spanish Fast With MosaLingua	5
+- :) Sudoku +	5
+- The Photographer's Ephemeris	5
+- King of Dragon Pass	5
+- Escape the Sweet Shop Series	5
+- Infinity Blade	5
+- Plants vs. Zombies HD	5
+- Plants vs. Zombies	5
 
 
 **9. Now compare the data from questions 5 and 6. What do you see?**
@@ -85,9 +85,9 @@ The highest rated apps seems to be all for free with a very high rating count (m
 **10. How could you take the top 3 regarding the user ratings but also the number of votes?**
 
 **Answer**:
--Head Soccer	5	481564
--Plants vs. Zombies	5	426463
--Sniper 3D Assassin: Shoot to Kill Gun Game	5	386521
+- Head Soccer	5	481564
+- Plants vs. Zombies	5	426463
+- Sniper 3D Assassin: Shoot to Kill Gun Game	5	386521
 
 **11. Does people care about the price?** Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?
 
@@ -98,16 +98,16 @@ Yes they do.
 
 **Number of app by price range**:
 
--0	4056
--0.99	728
--2.99	683
--1.99	621
--4.99	394
--3.99	277
--6.99	166
--9.99	81
--5.99	52
--7.99	33
+- 0	4056
+- 0.99	728
+- 2.99	683
+- 1.99	621
+- 4.99	394
+- 3.99	277
+- 6.99	166
+- 9.99	81
+- 5.99	52
+- 7.99	33
 
 As we can see the % total of free apps is more than 50% indicating a clear preference towards free apps.
 
