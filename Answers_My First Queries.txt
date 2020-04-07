@@ -1,0 +1,70 @@
+1. Which are the different genres?
+	⁃	Games
+	⁃	Productivity
+	⁃	Weather
+	⁃	Shopping
+	⁃	Reference
+	⁃	Finance
+	⁃	Music
+	⁃	Utilities
+	⁃	Travel
+	⁃	"Social Networking"
+	⁃	Sports
+	⁃	Business
+	⁃	"Health & Fitness"
+	⁃	Entertainment
+	⁃	"Photo & Video"
+	⁃	Navigation
+	⁃	Education
+	⁃	Lifestyle
+	⁃	"Food & Drink"
+	⁃	News
+	⁃	Book
+	⁃	Medical
+	⁃	Catalogs
+2. Which is the genre with more apps rated?
+	⁃	Social Networking
+3. Which is the genre with more apps?
+	⁃	Games (3862)
+4. Which is the one with the least?
+	⁃	Catalogs (10)
+5. Take the 10 apps most rated.
+	1.	Facebook, 2974676
+	2.	Instagram, 2161558
+	3.	"Clash of Clans", 2130805
+	4.	"Temple Run", 1724546
+	5.	"Pandora - Music & Radio", 1126879
+	6.	Pinterest, 1061624
+	7.	Bible, 985920
+	8.	"Candy Crush Saga", 961794
+	9.	"Spotify Music" ,878563
+	10.	"Angry Birds", 824451
+6. Take the 10 apps best rated by users.
+	1.	"Advent Magnificat Companion 2016",5
+	2.	"Demi Lovato - Zombarazzie Adventure",5
+	3.	Balvinmoji,5
+	4.	Wavemoji,5
+	5.	"Room Escape Game - Pictures Room Esacpe",5
+	6.	"NashMoji ™ by Nash Grier",5
+	7.	"MacMoji ™  by Conor McGregor",5
+	8.	"大话问仙 - 与众不同的萌派仙侠回合游戏体验(送神器)",5
+	9.	"Nope Quiz",5
+	10.	Snowball!!,5
+7. Take a look on the data you retrieved in the question 5. Give some insights.
+Facebook is the frequently rated app with 2974676 ratings.  It has 27% more ratings than the next most frequently rated app (Instagram). Instagram and Facebook are owned by the same company. 
+8. Take a look on the data you retrieved in the question 6. Give some insights.
+Many of the “best-rated” apps have a low number of actual ratings, for example “Demi Lovato - Zombarazzie Adventure” has 690 ratings and 5 stars. Most of the apps shown in the Top 10 best ranked have a small number of actual user ratings. 
+9. Now compare the data from questions 5 and 6. What do you see?
+The best rated app doesn’t take into account the number of actual ratings on the app. Thus, if the app has 5 ratings of 5 stars, it’s technically “better” because of the overall average. By contrast, Facebook which has 2974676 ratings is at 3.5 stars. Arguably, the more popular the app, the more prone to user errors / issues as you have a larger user base (more variations of phone models, OS’s etc), thereby increasing the chance for lower reviews. 
+10. How could you take the top 3 regarding the user ratings but also the number of votes?
+Order the columns by User_Rating DESC, Rating_Count_Tot DESC. This will give the best rated apps with the highest number of ratings. The Top 3 are as follows: 
+	1.	"Head Soccer", 5, 481564
+	2.	"Plants vs. Zombies", 5, 426463
+	3.	"Sniper 3D Assassin: Shoot to Kill Gun Game", 5, 386521
+11. Do people care about the price? Add some queries, comment why are you doing them and the results you retrieve. What is your conclusion?
+	⁃	I counted the number of distinct price points in the price table. This returned 36 different price variations. This is interesting know how many distinct price points companies utilise when releasing their apps. 
+	⁃	The average price across all apps was 1.726. There are 4056 free (ie: ‘0’ price) apps and 3131 paid apps. This implies that despite the greater number of free apps, many apps are still paid for.  The most expensive app was 99.99 called “KNFB Reader”. 
+	⁃	The games genre has the highest number of free apps with 2257, whilst Medical has the lowest with 8. This suggests that most gaming companies tend to make their games free in order to attract the user and may gather earnings from In-app purchases. 
+	⁃	The games genre also has the highest number of paid apps with 1605, whilst Catalogs and Shopping only have 1 each (“My Movies Pro” and “The Christmas List”). In the case of Catalogs and Shopping it illustrates that they are outliers in their genre as typically you would expect the user to spend money via the Shopping service provided by the app and the Movies Pro app may be miscatagorized. 
+	⁃	Overall, given the higher number of free apps available and the low average value of the “paid” apps, it suggests that users are likely to prefer their apps to be free of charge in general. However, interestingly, given that on average the most highly rated genre of apps is Productivity (4.00), the average price per app is 4.33. By contrast, Games has an average rating of 3.68 with a payment of 1.43. This suggests that users are willing to more likely to pay for an app that makes them more productive, than arguably less productive. 
+
