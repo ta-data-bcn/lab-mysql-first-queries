@@ -1,0 +1,119 @@
+1. Which are the different genres?
+
+USE applestore;
+SELECT * FROM data;
+SELECT DISTINCT prime_genre FROM data;
+
+Games, Productivity, Weather, Shopping, Reference, Finance, Music, Utilities,
+Travel, Social Networking, Sports, Business, Health & Fitness, Entertainment,
+Photo & Video, Navigation, Education, Lifestyle, Food & Drink, News, Book,
+Medical, Catalogs.
+
+
+
+2. Which is the genre with more apps rated?
+
+USE applestore;
+SELECT * FROM data ORDER BY rating_count_tot DESC;
+
+Social Networking
+
+
+
+3. Which is the genre with more apps?
+
+USE applestore;
+SELECT * FROM data ORDER BY prime_genre;
+SELECT prime_genre, COUNT(*) as 'records'
+FROM data GROUP BY prime_genre ORDER BY records DESC;
+
+Games
+
+
+
+4. Which is the one with less?
+
+USE applestore;
+SELECT * FROM data ORDER BY prime_genre;
+SELECT prime_genre, COUNT(*) as 'records'
+FROM data GROUP BY prime_genre ORDER BY records;
+
+Catalogs
+
+
+
+5. Take the 10 apps most rated.
+
+USE applestore;
+SELECT * FROM data;
+SELECT track_name, rating_count_tot FROM data ORDER BY rating_count_tot DESC LIMIT 10;
+
+Facebook, Instagram, Clash of Clans, Temple Run, Pandora - Music & Radio,
+Pinterest, Bible, Candy Crush Saga, Spotify Music, Angry Birds.
+
+
+
+6. Take the 10 apps best rated by users.
+
+USE applestore;
+SELECT track_name, user_rating FROM data ORDER BY user_rating DESC LIMIT 10;
+
+TurboScan™ Pro - document & receipt scanner: scan multiple pages and photos to PDF
+Flashlight Ⓞ
+Learn to Speak Spanish Fast With MosaLingua
+:) Sudoku +
+The Photographer's Ephemeris
+King of Dragon Pass
+Escape the Sweet Shop Series
+Infinity Blade
+Plants vs. Zombies HD
+Plants vs. Zombies
+
+
+
+7. Take a look on the data you retrieved in the question 5. Give some insights.
+
+The apps most rated are SocialMedia, puzzles, music and religion related.
+
+
+
+
+8. Take a look on the data you retrieved in the question 6. Give some insights.
+
+The best rated apps are games, photo and language related apps.
+
+
+
+9. Now compare the data from questions 5 and 6. What do you see?
+
+Having lots of rate does not mean having good rates.
+
+
+
+10. How could you take the top 3 regarding the user ratings but also the number of votes?
+
+USE applestore;
+SELECT * FROM data;
+SELECT 
+    track_name, rating_count_tot, user_rating
+FROM
+    data
+GROUP BY user_rating , rating_count_tot
+ORDER BY user_rating DESC, rating_count_tot DESC LIMIT 3;
+
+Head Soccer, Plants vs. Zombies, Sniper 3D Assassin: Shoot to Kill Gun Game
+
+
+
+11. Does people care about the price? Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?
+
+USE applestore;
+SELECT * FROM data;
+SELECT 
+    track_name, price, rating_count_tot, user_rating
+FROM
+    data
+ORDER BY price DESC , user_rating DESC;
+
+People do not care much about the price, since some of the best rated apps are not free. 
+Also the amount of ratings is not dependant on the price, because we can see a lot of variance between values.
