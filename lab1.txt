@@ -1,0 +1,359 @@
+Question 1:
+Which genres?
+--------------
+select DISTINCT prime_genre from data;
+--------------
+Book
+Business
+Catalogs
+Education
+Entertainment
+Finance
+Food & Drink
+Games
+Health & Fitness
+Lifestyle
+Medical
+Music
+Navigation
+News
+Photo & Video
+Productivity
+Reference
+Shopping
+Social Networking
+Sports
+Travel
+Utilities
+Weather
+
+-----------------------------------------------------------
+Question 2:
+Genre with most apps rated?
+ 
+Select prime_genre,
+Count(track_name)
+from data 
+where rating_count_tot !=0
+group by prime_genre
+order by count(track_name) desc;
+
+Games	3400
+Entertainment	471
+Education	387
+Photo & Video	325
+Utilities	219
+Productivity	172
+Health & Fitness	159
+Music	134
+Social Networking	134
+Lifestyle	113
+Shopping	106
+Sports	101
+Finance	71
+Travel	71
+Weather	66
+Book	65
+News	60
+Reference	53
+Business	53
+Food & Drink	52
+Navigation	31
+Medical	20
+Catalogs	5
+--------------------------------------------------------------
+Question 3:
+Genre with more apps?
+
+Select prime_genre,
+Count(track_name)
+from data 
+group by prime_genre
+order by count(track_name) desc;
+
+Games
+
+Games	3862
+Entertainment	535
+Education	453
+Photo & Video	349
+Utilities	248
+Health & Fitness	180
+Productivity	178
+Social Networking	167
+Lifestyle	144
+Music	138
+Shopping	122
+Sports	114
+Book	112
+Finance	104
+Travel	81
+News	75
+Weather	72
+Reference	64
+Food & Drink	63
+Business	57
+Navigation	46
+Medical	23
+Catalogs	10
+
+-----------------------------------------------------
+Question 4:
+
+Less
+
+Select prime_genre,
+count(*)
+from data
+group by prime_genre
+Having count(*) <= 15
+order by count(*) desc;
+
+Catalogs	10
+
+---------------------------------------------------------
+Question 5:
+
+10 most apps 
+
+
+Select track_name, rating_count_tot
+from data
+order by rating_count_tot DESC
+limit 10;
+
+
+Facebook	2974676
+Instagram	2161558
+Clash of Clans	2130805
+Temple Run	1724546
+Pandora - Music 1126879
+& Radio	
+Pinterest	1061624
+Bible		985920
+Candy Crush Sag 961794
+Spotify Music	878563
+Angry Birds	824451
+
+
+-------------------------------------------------
+Question 6:
+10 apps best rated by users
+
+
+Select track_name, user_rating
+from data
+order by user_rating desc
+limit 10;
+  
+
+TurboScan™ Pro - document 	5
+& receipt scanner: scan multiple 
+pages and photos to PDF	
+Flashlight Ⓞ			5
+Learn to Speak Spanish 		5
+Fast With MosaLingua	
+:) Sudoku +			5
+The Photographer's Ephemeris	5
+King of Dragon Pass		5
+Escape the Sweet Shop Series	5
+Infinity Blade			5
+Plants vs. Zombies HD		5
+Plants vs. Zombies		5
+
+
+
+-------------------------------------------------
+Question 7:
+
+Mostly addictive applications. Social media number 1 and 2 +
+some addictive games. 
+
+
+
+-------------------------------------------------
+Question 8:
+
+Altough there were more applications with the highest score, this 
+is a portion of them. Different type of applications, with some
+useful ones, like scanner, language app and the photographer.
+In addition, some "high" quality games.
+
+
+-------------------------------------------------
+Question 9:
+
+No overlap!
+
+
+-------------------------------------------------
+Question 10:
+
+With Mysql the result can be shown: 
+
+
+Select track_name,user_rating,rating_count_tot
+
+from data
+Having user_rating > 4.5
+order by rating_count_tot desc
+limit 3;
+
+Head Soccer		5	481564
+Plants vs. Zombies	5	426463
+Sniper 3D Assassin: 
+Shoot to Kill Gun Game	5	386521
+
+-------------------------------------------------
+Question 11:
+
+
+Why: To compare the total amount of ratings with the total amount of rating of the cheapest
+apps (next table)
+Result:We see that even an app of 99.99EUR is downloaded. However, we also see that the numbers
+of downloads seem to be not that high. 
+
+Top 30 of most expensive apps
+
+------------
+KNFB Reader	99.99	71	Productivity	4.5
+Inspiration Maps 
+VPP		9.99	112	Education	4
+AudioNote - 
+Notepad and 
+Voice Recorder	9.99	1756	Business	4
+Boating USA	9.99	342	Navigation	3.5
+Notability	9.99	17594	Productivity	4
+Jesus Calling 
+Devotional by 
+Sarah Young	9.99	1685	Book	2.5
+Awesome Calendar
+ - Personal 
+Planner		9.99	4962	Productivity	4.5
+Sun Surveyor
+ - Sun & Moon 
+Visualization
+Tool		9.99	183	Photo & Video	5
+DEATHSMILES	9.99	540	Games	4.5
+PCalc - The 
+Best Calculator	9.99	1117	Utilities	4.5
+Notes Plus	9.99	6257	Productivity	4
+PDF Reader 
+Pro Edition - 
+Annotate,edit & 
+sign PDFs	9.99	7033	Business	4
+Baldur's Gate: Enhanced Edition	9.99	1454	Games	4
+SCRABBLE Premium for iPad	9.99	39678	Games	3.5
+iAnnotate PDF	9.99	11156	Productivity	4.5
+Chess Pro - with coach	9.99	10619	Games	5
+激Jパチスロ 2027	9.99	0	Games	0
+King of Dragon Pass	9.99	882	Games	5
+Home Design 3D GOLD	9.99	9889	Productivity	4.5
+GeniusMovieWords	9.99	0	Education	0
+MindNode – Delightful Mind Mapping	9.99	1296	Productivity	4
+Chess Pro with Coach - Learn,Play & Online Friends	9.99	8138	Games	4
+Refills Calendar - Scheduler - Note	9.99	196	Productivity	4
+Translator !!	9.99	128	Productivity	4
+forScore	9.99	3909	Music	4.5
+TuneIn Radio Pro - MLB Audiobooks Podcasts Music	9.99	71609	Music	4.5
+Carcassonne	9.99	10846	Games	4.5
+Noteshelf	9.99	7562	Productivity	4.5
+RadarScope	9.99	3449	Weather	4
+AnatomyMapp	9.99	23	Medical	3.5
+
+
+----------------
+
+Why: To compare with the above (most expensive).
+Result: The cheapest applications have significantly more downloads.
+
+Top 10 cheapest
+
+Facebook	0	2974676	Social Networking	3.5
+Evernote 
+- stay 
+organized	0	161065	Productivity	4
+WeatherBug - 
+Local Weather,
+ Radar, Maps,
+Alerts		0	188583	Weather	3.5
+eBay: Best 
+App to Buy, 
+Sell
+, Save! Online 
+Shopping	0	262241	Shopping	4
+Bible		0	985920	Reference	4.5
+Escape 
+the Sweet 
+Shop Series	0	3	Games	5
+PayPal - Send and request money safely	0	119487	Finance	4
+Pandora - Music & Radio	0	1126879	Music	4
+Google – Search made just for mobile	0	479440	Utilities	3.5
+TripAdvisor Hotels Flights Restaurants	0	56194	Travel	4
+
+
+----------------
+
+Why: Comparison of all avg amount of download, grouped by price (0-99)
+Result: Cheaper application have more likely a higher average downloads.
+
+
+
+
+select price, ROUND(avg(rating_count_tot),2)
+from data
+Group by price
+order by price asc
+;
+
+0	19749.80
+0.99	7145.66
+1.99	3811.86
+11.99	178.83
+12.99	278.00
+13.99	1209.17
+14.99	1264.90
+15.99	882.00
+16.99	491.00
+17.99	945.67
+18.99	79.00
+19.99	970.00
+2.99	2805.53
+20.99	751.00
+21.99	64.00
+22.99	79.50
+23.99	2.50
+24.99	526.88
+249.99	773.00
+27.99	325.00
+29.99	479.83
+299.99	41.00
+3.99	1660.55
+34.99	49.00
+39.99	749.00
+4.99	3242.20
+47.99	0.00
+49.99	252.00
+5.99	926.15
+59.99	141.00
+6.99	5458.38
+7.99	4266.88
+74.99	927.00
+8.99	1546.78
+9.99	3496.38
+99.99	71.00
+
+
+
+-----------------
+
+Conclusion:
+
+Yes, it seems that price has influence on the amount of downloads.
+
+
+
+
+
+
+
