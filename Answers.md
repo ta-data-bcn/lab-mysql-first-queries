@@ -1,6 +1,6 @@
 
-**Question 1**:
-The different genres are:
+**Question 1**:<br>
+The different genres are:<br>
 
 Games<br>
 Productivity<br>
@@ -27,19 +27,19 @@ Medical<br>
 Catalogs<br>
 
 
-**Question 2**:
+**Question 2**:<br>
 The genre with more apps rated is:<br>
 Games<br>
 
-**Question 3**:
+**Question 3**:<br>
 The genre with more apps:<br>
 Games<br>
 
-**Question 4**:
+**Question 4**:<br>
 The genre with less:<br>
 Catalogs<br>
 
-**Question 5**:
+**Question 5**:<br>
 top 10 most rated:<br>
 Facebook	2974676<br>
 Instagram	2161558<br>
@@ -52,7 +52,7 @@ Candy Crush Saga	961794 <br>
 Spotify Music	878563<br>
 Angry Birds	824451<br>
 
-**Question 6**:
+**Question 6**:<br>
 top 10 best rated:<br>
 there are many apps with the maximum rating (5). A lot more than 10 but the ones I get are:<br>
 Advent Magnificat Companion 2016	5<br>
@@ -78,20 +78,20 @@ CSR Racing 2	5	257100<br>
 Pictoword: Fun 2 Pics Guess What's the Word Trivia	5	186089<br>
 Plants vs. Zombies HD	5	163598<br>
 
-**Question 7**:
+**Question 7**:<br>
 
 There seems to be a clear difference between the top 3 apps most rated by user (<2000000) the top 6 (<1000000), the top 10 (<800000) and the rest, indicating that probably those apps are the most used as well hence all the ratings.<br>
 
-**Question 8**:
+**Question 8**:<br>
 
 There is a clear difference between the top 5 and the rest.<br>
 Interestingly, the highest rated apps (and according to the previous conclusion, the most used) are not the highest ranked by users, indicating that the quality of the app and the interface is not the main thing when decideing to use an app and that trends could play a role or that users are a lot more demanding.<br>
 
-**Question 9**:
+**Question 9**:<br>
 
 As mentioned, what I see is that the highest rated apps are not the highest ranked<br>
 
-**Question 10**:
+**Question 10**:<br>
 
 top 3:<br>
 Head Soccer	5	481564<br>
@@ -99,6 +99,6 @@ Plants vs. Zombies	5	426463<br>
 Sniper 3D Assassin: Shoot to Kill Gun Game	5	386521<br>
 
 
-**Question 11**:
+**Question 11**:<br>
 
 It seems that people in general do care about price since the highest rated and ranked are generally free but there are apps that are not, so it wouldn't be 100% limited by the price.
