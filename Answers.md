@@ -2,8 +2,8 @@
 **Question 1**:
 The different genres are:
 
-Games
-Productivity
+Games<br>
+Productivity<br>
 Weather
 Shopping
 Reference
