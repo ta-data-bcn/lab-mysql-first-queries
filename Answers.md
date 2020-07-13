@@ -29,18 +29,22 @@ Catalogs<br>
 
 **Question 2**:<br>
 The genre with more apps rated is:<br>
+
 Games<br>
 
 **Question 3**:<br>
 The genre with more apps:<br>
+
 Games<br>
 
 **Question 4**:<br>
 The genre with less:<br>
+
 Catalogs<br>
 
 **Question 5**:<br>
 top 10 most rated:<br>
+
 Facebook	2974676<br>
 Instagram	2161558<br>
 Clash of Clans	2130805<br>
@@ -54,6 +58,7 @@ Angry Birds	824451<br>
 
 **Question 6**:<br>
 top 10 best rated:<br>
+
 there are many apps with the maximum rating (5). A lot more than 10 but the ones I get are:<br>
 Advent Magnificat Companion 2016	5<br>
 Demi Lovato - Zombarazzie Adventure	5<br>
