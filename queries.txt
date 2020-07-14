@@ -1,0 +1,100 @@
+Lab SQL queries
+
+# Q1
+use applestore;
+select distinct(prime_genre) from data
+
+# Q2
+use applestore;
+select prime_genre, rating_count_tot from data
+group by prime_genre
+order by rating_count_tot DESC
+
+The genre is social networking.
+
+# Q3
+use applestore;
+select prime_genre, count(id) from data
+group by (prime_genre)
+order by count(id) DESC
+
+The genre with more apps is games, the count can be done with any column since we just want the number of rows
+grouped by genre.
+
+#Q4
+use applestore;
+select prime_genre, count(id) from data
+group by (prime_genre)
+order by count(id) 
+ 
+The genre with less is catalogs.
+
+#Q5
+use applestore;
+select rating_count_tot, track_name from data
+order by rating_count_tot DESC
+limit 10
+
+#Q6
+use applestore;
+select user_rating, track_name from data
+order by user_rating DESC
+limit 10
+
+#Q7
+ We see social media apps, games and music being the most rated, which would make sense given that are the most used by users and belong
+to the categories with the most apps available. The bible seems to be an outlier.
+
+#Q8
+The best rated top ten is mainly populated by games (which again given the incredible competition in this genre, 
+some few awesome results are expected) and then we have utilities, education and photography which could also be considered a utility. 
+Maybe this are simple apps that perfectly match the function they were designed for.
+
+#Q9 
+Comparing the 2 tables we see that the most rated apps are nowhere to be seen amongst the best rated, and the other way around.
+there seems to be a negative correlation between how extended an app is and how well it is rated. However we see that spcially thee
+games and music ones have quite a good rating even though they are not in the top ten (4.5).
+
+#Q10
+use applestore;
+SELECT track_name, rating_count_tot, user_rating from data
+order by rating_count_tot DESC, user_rating DESC
+limit 3
+
+#Q11
+
+This will give us the most expensive, most rated apps, which we can use as a proxy for most downloaded:
+use applestore;
+select user_rating, track_name, prime_genre, rating_count_tot, price from data
+order by rating_count_tot DESC, price DESC
+
+Even though  we sorted for most expensive the top ones are still free and actually the most downloaded one (Facebook)
+has a rating lower than those in its level of volume of review (3.5)
+If we take the DESC out to see the bottom values we see the apps that have the less amount of ratings are also free. 
+We could say, the price does not affect how much people are going to rate (download) an app.
+
+If we just order by price like this:
+use applestore;
+select user_rating, track_name, prime_genre, rating_count_tot, price from data
+order by price
+from the cheapest on, we see that there are very heterogeneous apps in terms of amount and point of the ratings.
+
+if we do:
+use applestore;
+select user_rating, track_name, prime_genre, rating_count_tot, price from data
+order by price Desc
+we'll get them sorted from the most expensive on, which gives us interesting insights: 
+top 3 most expensive apps are for productivity and except the first one which has only 71 reviews 
+( which is normal at a price point of 99.99), the rest have quite large review numbers  (mostly on the thousands).
+
+So an app being free is certainly not enough for people to download it, the price does affect however the rating, typically the apps 
+with a respectable pool of rewievs, that have a price of around 10 euros (which is the maximum not counting the outlier) have 4.5 ratings.
+The number of reviews for same-price apps is heterogeneous as well. 
+
+use applestore;
+select user_rating, prime_genre, rating_count_tot, price from data
+group by prime_genre
+order by price desc
+
+this gives us the genres by price and generaly looking at review numbers it seems people are more prone to pay for games, video/photo and utilities
+although these tend to have different price points, with utilities being the most expensive.
