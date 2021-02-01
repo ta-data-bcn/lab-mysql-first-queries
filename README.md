@@ -99,7 +99,7 @@ It could be interesting to have a column with information of ratings per downloa
 
 **11. Does people care about the price?** Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?
 
-Comparing the apps that cost $9.99 and the free apps, and grouping by average ratings, show us a similar pattern with most raitngs around 4 and 4.5. = ratings is the third, and co-third categories (in apps costing 0 and 9.9 respectively.)
+Comparing the apps that cost $9.99 and the free apps, and grouping by average ratings, shows us a similar pattern with most raitngs around 4 and 4.5. 0-star rating is the third, and co-third categories (in apps costing 0 and 9.9 respectively.) The pattern does not seem to differ between $9.99 and $0 apps. There are more tests in the sql file.
 
 
 ## Deliverables 
