@@ -1,0 +1,157 @@
+1. Which are the different genres?
+
+'Games'
+'Productivity'
+'Weather'
+'Shopping'
+'Reference'
+'Finance'
+'Music'
+'Utilities'
+'Travel'
+'Social Networking'
+'Sports'
+'Business'
+'Health & Fitness'
+'Entertainment'
+'Photo & Video'
+'Navigation'
+'Education'
+'Lifestyle'
+'Food & Drink'
+'News'
+'Book'
+'Medical'
+'Catalogs'
+
+
+2. Which is the genre with more apps rated?
+
+'Social Networking', '2974676'
+'Music', '1126879'
+'Reference', '985920'
+'Shopping', '262241'
+'Book', '252076'
+'Weather', '188583'
+'Productivity', '161065'
+'Sports', '137951'
+'Finance', '119487'
+'Food & Drink', '113936'
+'Travel', '56194'
+'Games', '21292'
+'Education', '8932'
+'Health & Fitness', '5795'
+'Photo & Video', '3610'
+'Medical', '3483'
+'News', '2229'
+'Utilities', '1117'
+'Lifestyle', '812'
+'Catalogs', '431'
+'Entertainment', '137'
+'Navigation', '30'
+'Business', '8'
+
+
+3. Which is the genre with more apps?
+
+'Games', '3862'
+'Entertainment', '535'
+'Education', '453'
+'Photo & Video', '349'
+'Utilities', '248'
+'Health & Fitness', '180'
+'Productivity', '178'
+'Social Networking', '167'
+'Lifestyle', '144'
+'Music', '138'
+'Shopping', '122'
+'Sports', '114'
+'Book', '112'
+'Finance', '104'
+'Travel', '81'
+'News', '75'
+'Weather', '72'
+'Reference', '64'
+'Food & Drink', '63'
+'Business', '57'
+'Navigation', '46'
+'Medical', '23'
+'Catalogs', '10'
+
+
+4. Which is the one with less?
+
+'Catalogs', '10'
+'Medical', '23'
+'Navigation', '46'
+'Business', '57'
+'Food & Drink', '63'
+'Reference', '64'
+'Weather', '72'
+'News', '75'
+'Travel', '81'
+'Finance', '104'
+'Book', '112'
+'Sports', '114'
+'Shopping', '122'
+'Music', '138'
+'Lifestyle', '144'
+'Social Networking', '167'
+'Productivity', '178'
+'Health & Fitness', '180'
+'Utilities', '248'
+'Photo & Video', '349'
+'Education', '453'
+'Entertainment', '535'
+'Games', '3862'
+
+
+5. Take the 10 apps most rated.
+
+'Facebook', '0', '2974676', 'Social Networking'
+'Instagram', '0', '2161558', 'Photo & Video'
+'Clash of Clans', '0', '2130805', 'Games'
+'Temple Run', '0', '1724546', 'Games'
+'Pandora - Music & Radio', '0', '1126879', 'Music'
+'Pinterest', '0', '1061624', 'Social Networking'
+'Bible', '0', '985920', 'Reference'
+'Candy Crush Saga', '0', '961794', 'Games'
+'Spotify Music', '0', '878563', 'Music'
+'Angry Birds', '0', '824451', 'Games'
+
+6. Take the 10 apps best rated by users.
+
+TurboScan™ Pro - document & receipt scanner: scan multiple pages and photos to PDF	4.99	5	Business
+Flashlight Ⓞ	0	5	Utilities
+Learn to Speak Spanish Fast With MosaLingua	4.99	5	Education
+:) Sudoku +	2.99	5	Games
+The Photographer's Ephemeris	8.99	5	Photo & Video
+King of Dragon Pass	9.99	5	Games
+Escape the Sweet Shop Series	0	5	Games
+Infinity Blade	0.99	5	Games
+Plants vs. Zombies HD	0.99	5	Games
+Plants vs. Zombies	0.99	5	Games
+
+7. Take a look on the data you retrieved in the question 5. Give some insights.
+
+These apps are all free, making them accesible to anyone!
+
+8. Take a look on the data you retrieved in the question 6. Give some insights.
+
+Some of these apps are not free, you have to pay to use them. Most of these apps are Games. 
+
+9. Now compare the data from questions 5 and 6. What do you see?
+
+What is more inmediate is that the most voted apps are not the best apps, for example Facebook has a user rating of 3.5 but its the most voted app. 
+The majority of apps that have the highest user rating are not free, which allows them to develop a great user friendly app.
+
+10. How could you take the top 3 regarding the user ratings but also the number of votes?
+
+You could, you will have to decide what is more important, the user rating or the amount of votes. In my case, I have generated this table which is the most voted apps whith thehighest user rating
+Facebook	3.5	2974676
+Instagram	4.5	2161558
+Clash of Clans	4.5	2130805
+
+11. Does people care about the price? Do some queries, comment why are you doing them and the results you retrieve. What is your conclusion?
+
+Yes they do, Im quering the apps that have the highest rating with the highest user rating and the majority of these apps are free. Also the average of total ratings are far superior in free apps than in paid apps which tells us that these apps have more users probably because they are free.11
